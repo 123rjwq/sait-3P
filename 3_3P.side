@@ -1,0 +1,252 @@
+{
+  "id": "e61422c7-d042-46f2-bf8b-6b7ff5dc36cc",
+  "version": "2.0",
+  "name": "3_3P",
+  "url": "http://3p",
+  "tests": [{
+    "id": "0c475308-ed39-49c1-b5df-cd65ecb77918",
+    "name": "3_3p",
+    "commands": [{
+      "id": "ed2a8699-d7dd-4b5f-ac8d-a4d6f818fb7e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c2d9470-00f9-4a91-80f8-cf8b06cc6378",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "207c1675-bcc6-43ab-b740-7b02850df0dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Магазин",
+      "targets": [
+        ["linkText=Магазин", "linkText"],
+        ["css=#menu-item-46 > .menu-link", "css:finder"],
+        ["xpath=//li[@id='menu-item-46']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/shop/']", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Магазин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc6f25ee-6c81-44dc-a0d6-d81eb894fda8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=В корзину",
+      "targets": [
+        ["linkText=В корзину", "linkText"],
+        ["css=.entry:nth-child(1) > .product-inner .button", "css:finder"],
+        ["xpath=//a[contains(text(),'В корзину')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/ul/li/div/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?add-to-cart=27')]", "xpath:href"],
+        ["xpath=//article/ul/li/div/ul/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'В корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5776d2d-8952-4845-a5aa-489ccb987e8f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Просмотр корзины",
+      "targets": [
+        ["linkText=Просмотр корзины", "linkText"],
+        ["css=.added_to_cart", "css:finder"],
+        ["xpath=(//a[contains(text(),'Просмотр корзины')])[3]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/ul/li/div/ul/li[7]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://3p/cart/'])[6]", "xpath:href"],
+        ["xpath=//li[7]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf6a4ff9-6cf0-4bc0-a137-ff46b88e3a97",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=+",
+      "targets": [
+        ["linkText=+", "linkText"],
+        ["css=.plus", "css:finder"],
+        ["xpath=//a[contains(text(),'+')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td[5]/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[2]", "xpath:href"],
+        ["xpath=//td[5]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f18d68ef-3d8c-49ce-8621-2f752c540e3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td/div/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afeaad1a-8431-4914-bca3-a83a8fa5a7c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td/div/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "071435ae-a059-49c9-98dd-470d0e1fb51f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=coupon_code",
+      "targets": [
+        ["id=coupon_code", "id"],
+        ["name=coupon_code", "name"],
+        ["css=#coupon_code", "css:finder"],
+        ["xpath=//input[@id='coupon_code']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td/div/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d52e3378-7db3-4e97-9b90-69e1f928601a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=-",
+      "targets": [
+        ["linkText=-", "linkText"],
+        ["css=.minus", "css:finder"],
+        ["xpath=//a[contains(text(),'-')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td[5]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//td[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79eaad6-4624-492a-ac8d-87bbf7010824",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?remove_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54034100-30e6-433b-95a5-d36cb6ebc691",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?remove_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23540a1d-f498-4578-a44f-3bf7a50e1def",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?remove_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c425a49-497a-4eac-bf68-c1f6f879e7bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.restore-item",
+      "targets": [
+        ["css=.restore-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Отменить?')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?undo_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4114967d-b734-42f4-8651-47ac6637a343",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?remove_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a277bf3-ae6b-4275-9b04-3aafb016ad0e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?remove_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12f2c296-9c81-432d-93ac-121a67eafcdf",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='content']/article/div/div/div/div/div/div/div/form/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://3p/cart/?remove_item=02e74f10e0327ad868d138f2b4fdd6f0&_wpnonce=6340d63f61']", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7bf64a35-a9a3-45c2-b107-0115c2b4faae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0c475308-ed39-49c1-b5df-cd65ecb77918"]
+  }],
+  "urls": ["http://3p/"],
+  "plugins": []
+}
